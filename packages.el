@@ -51,6 +51,9 @@
 ;;
 ;; https://emacs.stackexchange.com/questions/75827/doom-emacs-error-running-hook-global-git-commit-mode-because-void-variable
 ;;
+
+(package! org-bullets)
+
 (package! transient
       :pin "c2bdf7e12c530eb85476d3aef317eb2941ab9440"
       :recipe (:host github :repo "magit/transient"))
