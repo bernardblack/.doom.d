@@ -12,10 +12,13 @@
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
 ;; - `doom-font' -- the primary font to use
+(setq doom-font (font-spec :family "JetBrains Mono" :size 14.0 :weight 'medium))
+(set-fontset-font t nil (font-spec :size 20 :name "Symbola"))
 ;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
 ;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
 ;;   presentations or streaming.
 ;; - `doom-unicode-font' -- for unicode glyphs
+;;(setq doom-unicode-font (font-spec :family "Symbola" :size 18.0 :weight 'medium))
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
 ;;
 ;; See 'C-h v doom-font' for documentation and more examples of what they
