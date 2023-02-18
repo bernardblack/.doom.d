@@ -54,6 +54,8 @@
 
 (package! org-bullets)
 
+;;(package! catppuccin-theme)
+
 (package! transient
       :pin "c2bdf7e12c530eb85476d3aef317eb2941ab9440"
       :recipe (:host github :repo "magit/transient"))
