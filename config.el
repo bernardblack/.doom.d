@@ -80,7 +80,7 @@
 
 (require 'org-bullets)(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
-(setq evil-normal-state-cursor '(box "orange")
-      evil-insert-state-cursor '(box "orange")
-      evil-replace-state-cursor '(box "red")
-      evil-visual-state-cursor '(box "red"))
+(setq evil-normal-state-cursor '(box "dark orange")
+      evil-insert-state-cursor '(bar "dark orange")
+      evil-replace-state-cursor '(hollow "dark orange")
+      evil-visual-state-cursor '(hollow "dark orange"))
