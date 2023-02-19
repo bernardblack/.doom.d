@@ -12,8 +12,8 @@
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
 ;; - `doom-font' -- the primary font to use
-(setq doom-font (font-spec :family "JetBrains Mono" :size 14.0 :weight 'medium))
-(set-fontset-font t nil (font-spec :size 20 :name "Symbola"))
+(setq doom-font (font-spec :family "JetBrains Mono" :size 13.0 :weight 'medium))
+(set-fontset-font t nil (font-spec :size 18 :name "Symbola"))
 ;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
 ;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
 ;;   presentations or streaming.
@@ -35,7 +35,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-gruvbox)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -79,3 +79,8 @@
 ;; they are implemented.
 
 (require 'org-bullets)(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+(setq evil-normal-state-cursor '(box "orange")
+      evil-insert-state-cursor '(box "orange")
+      evil-replace-state-cursor '(box "red")
+      evil-visual-state-cursor '(box "red"))
